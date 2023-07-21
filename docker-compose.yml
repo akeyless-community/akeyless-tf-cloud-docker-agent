@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    tfc-agent:
+        environment:
+            - TFC_AGENT_TOKEN=$TFC_AGENT_TOKEN
+            - TFC_AGENT_NAME=$TFC_AGENT_NAME
+        image: devorbitus/tfc-agent-akeyless:1.4
+        container_name: agent
+        restart: unless-stopped
