@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: devorbitus/tfc-agent-akeyless:1.4
+          tags: devorbitus/tfc-agent-akeyless:1.5
